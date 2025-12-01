@@ -1,0 +1,20 @@
+# Installing Plotly
+# python3 -m pip install plotly
+# python3 -m pip install pandas
+
+# Plotly Express depends on pandas, which is a library for working efficiently with data, so we need to install that as well.
+# https://plotly.com/python/
+
+from random import randint
+
+
+class Dice:
+    """A class representing a single dice."""
+
+    def __init__(self, num_sides=6):
+        """Assume a six-sided dice."""
+        self.num_sides = num_sides
+
+    def roll(self):
+        """Return a random value between 1 and number of sides."""
+        return randint(1, self.num_sides)
